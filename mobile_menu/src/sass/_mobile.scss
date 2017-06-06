@@ -1,0 +1,97 @@
+@media (max-width: 960px) {
+    .header {
+        
+        &__list {
+            position: absolute;
+            width: 95%;
+            padding: 5% 0;
+            border-radius: 5px;
+            background: rgba(61, 165, 178, 0.9);
+            top: 0%;
+            transform: translateY(-100%);
+//            top: 90px;
+//            right: -100%;
+//            transform: translateX(0%);
+            flex-direction: column;
+            align-items: center;
+            transition: .25s ease-out;
+            opacity: 0;
+        }
+        
+        &__list.open {
+            top: 90px;
+            transform: translateY(0%);
+            opacity: 1;
+            z-index: -1;
+//            right: 50%;
+//            transform: translateX(50%);
+        }
+        
+        &__hamburger {
+            display: flex;
+            cursor: pointer;
+            border: 0;
+            background: transparent;
+//            background: #000;
+            width: 60px;
+            height: 55px;
+        }
+        
+        // styling hamburger icon
+        
+        &__hamburger-icon {
+            width: 60px;
+            height: 47px;
+//            margin: 50px auto;
+            position: relative;
+            transform: rotate(0deg);
+            transition: .5s ease-in-out;
+        }
+        
+        &__hamburger-icon span {
+            display: block;
+            position: absolute;
+            height: 7px;
+            width: 100%;
+            background: #ffffff;
+            opacity: 1;
+            left: 0;
+            transform: rotate(0deg);
+            transition: .25s ease-in-out;
+        }
+        
+        &__hamburger-icon span:nth-child(1) {
+            top: 0px;
+        }
+        
+        &__hamburger-icon span:nth-child(2), &__hamburger span:nth-child(3) {
+            top: 18px;
+        }
+        
+        &__hamburger-icon span:nth-child(4) {
+            top: 36px;
+        }
+        
+        // animation hamburger icon (add class open)
+        
+        &__hamburger-icon.open span:nth-child(1) {
+            top: 18px;
+            width: 0%;
+            left: 50%;
+        }
+        
+        &__hamburger-icon.open span:nth-child(2) {
+            transform: rotate(45deg);
+        }
+        
+        &__hamburger-icon.open span:nth-child(3) {
+            transform: rotate(-45deg);
+        }
+        
+        &__hamburger-icon.open span:nth-child(4) {
+            top: 18px;
+            width: 0%;
+            left: 50%;
+        }
+    }
+}
