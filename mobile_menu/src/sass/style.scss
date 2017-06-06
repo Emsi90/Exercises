@@ -8,7 +8,7 @@ html {
     font-size: 62.5%;
 }
 body {
-    background: #f5fafc;
+    background: #EEEEEE;
 }
 ////////////
 //HEADER
@@ -23,7 +23,7 @@ body {
         position: fixed;
         width: 100%;
         height: 70px;
-        background: #80DEEA;
+        background: #303841;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -50,8 +50,8 @@ body {
     }
     
     &__logo-img {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 40px;
     }
     // Hamburger menu
     &__hamburger {
@@ -81,13 +81,13 @@ body {
         color: #ffffff;
 
         &:hover {
-            color: $lightblue2;
+            color: #EA9215;
         }
     }
     
     &__hero {
         width: 100%;
-        height: 600px;
+        height: 99vh;
         background: url('../img/bg.jpg') no-repeat;
         background-size: cover;
         background-position: top center;
@@ -101,7 +101,7 @@ body {
         text-align: center;
         font-size: 6rem;
         font-weight: 700;
-        color: #f8feff;
+        color: #EEEEEE;
     }
     
     &__paragraph {
@@ -109,7 +109,7 @@ body {
         margin-top: 25px;
         font-size: 1.6rem;
         font-style: italic;
-        color: #fff;
+        color: #EEEEEE;
     }
 }
 .main {
@@ -125,7 +125,7 @@ body {
     }
     
     section {
-        padding: 40px;
+        padding: 40px 0;
         border-radius: 5px;
         margin: 25px 0;
         display: flex;
@@ -134,11 +134,11 @@ body {
     }
     
     section:nth-child(even) {
-        background: #f1fcfd;
+        background: #EEEEEE;
     }
     &__header {
         font-size: 3rem;
-        color: #709398;
+        color: #303841;
     }
     
     &__hr {
@@ -146,13 +146,13 @@ body {
         width: 50px;
         height: 2px;
         border: none;
-        background: #c8ecf0;
+        background: #EA9215;
     }
     
     &__paragraph {
         text-align: center;
         line-height: 30px;
-        color: #627b7e;
+        color: #20272e;
         font-size: 1.6rem;
         font-weight: 300;
     }
@@ -160,7 +160,7 @@ body {
 .footer {
     width: 100%;
     height: 50px;
-    background: #61a9b2;
+    background: #303841;
     display: flex;
     justify-content: center;
     align-items: center;
