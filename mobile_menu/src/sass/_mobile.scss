@@ -1,6 +1,21 @@
 @media (max-width: 960px) {
     .header {
         
+        &__item {
+            text-align: center;
+            padding: 20px;
+            transition: .5 ease-out;
+            
+            &--submenu:hover .submenu {
+            display: flex;
+            flex-direction: column;
+            position: static;
+            margin-top: 20px;
+            background: none;
+            text-transform: lowercase;
+        }
+        }
+        
         &__list {
             position: absolute;
             width: 95%;
@@ -25,6 +40,17 @@
             z-index: -1;
 //            right: 50%;
 //            transform: translateX(50%);
+        }
+        
+        .submenu {
+            
+            &__item {
+                text-align: center;
+            }
+            
+            &__link {
+
+            }
         }
         
         &__hamburger {
