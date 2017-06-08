@@ -7,13 +7,8 @@
             transition: .5 ease-out;
             
             &--submenu:hover .submenu {
-            display: flex;
-            flex-direction: column;
-            position: static;
-            margin-top: 20px;
-            background: none;
-            text-transform: lowercase;
-        }
+                display: none;
+            }
         }
         
         &__list {
@@ -42,16 +37,20 @@
 //            transform: translateX(50%);
         }
         
-        .submenu {
-            
-            &__item {
-                text-align: center;
-            }
-            
-            &__link {
-
-            }
+        .submenu.open {
+            display: flex;
+            flex-direction: column;
+            position: static;
+            margin-top: 20px;
+            background: none;
+            text-transform: lowercase;
         }
+        
+//        .submenu {
+//            
+//            &__item {
+//            }
+//        }
         
         &__hamburger {
             display: flex;

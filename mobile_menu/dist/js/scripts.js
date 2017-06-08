@@ -8,3 +8,13 @@ btn.addEventListener('click', function() {
     slideMenu.classList.toggle('open');
     
 }, false);
+
+var submenu = document.querySelector('.header__item--submenu');
+var openSubmenu = document.querySelector('.submenu');
+
+
+submenu.addEventListener('click', function() {
+
+    openSubmenu.classList.toggle('open');
+    
+}, false);
